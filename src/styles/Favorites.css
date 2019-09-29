@@ -1,0 +1,15 @@
+.favoritesPage {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.favoritesCity {
+    border: solid black;
+    width: 15vw;
+    font-size: 2.5vmin;
+    text-align: center;
+    padding: 3%;
+    margin-top: 2%;
+}
