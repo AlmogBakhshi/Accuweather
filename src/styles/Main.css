@@ -7,6 +7,7 @@
 
 .mainSearch {
     flex: 0.1;
+    width: 200px;
 }
 
 .mainWeatherDetails {

@@ -6,7 +6,7 @@ const FavoriteCity = (props) => {
     const [getCityTemperatureDetails, setCityTemperatureDetails] = useState(null)
 
     useEffect(() => {
-        fetch(`http://dataservice.accuweather.com/currentconditions/v1/${props.city.Key}?apikey=${Keys.ApiKey}&language=${Keys.Language}`)
+        fetch(`https://dataservice.accuweather.com/currentconditions/v1/${props.city.Key}?apikey=${Keys.ApiKey}&language=${Keys.Language}`)
             .then(res => res.json())
             .then(res => setCityTemperatureDetails(res[0]))
             .catch(err => console.warn(err))
@@ -18,7 +18,7 @@ const FavoriteCity = (props) => {
             <div>
                 <div>{props.city.LocalizedName}</div>
                 {getCityTemperatureDetails.Temperature.Metric.Value}
-                <WiCelsius size='5vmin' />
+                <WiCelsius size='30' />
             </div>
             {getCityTemperatureDetails.WeatherText}
         </div>

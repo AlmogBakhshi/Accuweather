@@ -10,7 +10,7 @@ class CitySearchStore {
     setSearchText = value => {
         this.searchText = value;
         value.trim() === '' ? this.setAutoComplete([]) :
-            fetch(`http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${Keys.ApiKey}&q=${value}&language=${Keys.Language}`)
+            fetch(`https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${Keys.ApiKey}&q=${value}&language=${Keys.Language}`)
                 .then(res => res.json())
                 .then(res => { this.setAutoComplete(res) })
                 .catch(err => console.warn(err))

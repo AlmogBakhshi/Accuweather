@@ -18,10 +18,12 @@
 }
 
 .autoCompleteFilterCities {
-    flex: 1;
     margin-left: -20px;
-    /* padding-right: 2px; */
     position: absolute;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     
 }
 

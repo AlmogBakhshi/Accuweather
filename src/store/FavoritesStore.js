@@ -4,7 +4,7 @@ configure({ enforceActions: "observed" });
 
 class FavoritesStore {
     getAsyncCityTemperatureDetails = async (key) => {
-        return await fetch(`http://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=${Keys.ApiKey}&language=${Keys.Language}`)
+        return await fetch(`https://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=${Keys.ApiKey}&language=${Keys.Language}`)
             .then(res => res.json())
             .then(res => res[0])
             .catch(err => console.warn(err))
