@@ -1,3 +1,5 @@
+![Accuweather](https://user-images.githubusercontent.com/44566371/67641807-e3029880-f90d-11e9-83f1-0e391a3824be.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
